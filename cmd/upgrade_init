@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/../app/docker"
+docker compose pull crafty || docker-compose pull crafty
+docker compose up -d crafty || docker-compose up -d crafty

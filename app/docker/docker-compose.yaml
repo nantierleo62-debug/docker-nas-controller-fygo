@@ -1,0 +1,16 @@
+services:
+  crafty:
+    image: registry.gitlab.com/crafty-controller/crafty-4:latest
+    container_name: crafty-controller
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+      - "19132:19132/udp"
+      - "25500-25510:25500-25510"
+    volumes:
+      - /var/lib/fnos/apps/crafty-controller/backups:/crafty/backups
+      - /var/lib/fnos/apps/crafty-controller/logs:/crafty/logs
+      - /var/lib/fnos/apps/crafty-controller/servers:/crafty/servers
+      - /var/lib/fnos/apps/crafty-controller/config:/crafty/app/config
+      - /var/lib/fnos/apps/crafty-controller/import:/crafty/import

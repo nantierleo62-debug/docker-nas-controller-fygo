@@ -1,0 +1,7 @@
+{
+  "docker": true,
+  "host_network": false,
+  "host_docker_sock": true,
+  "capabilities": [],
+  "allow_host_paths": ["/var/lib/fnos/apps/crafty-controller"]
+}

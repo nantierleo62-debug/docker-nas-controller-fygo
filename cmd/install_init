@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+mkdir -p /var/lib/fnos/apps/crafty-controller/{backups,logs,servers,config,import}
+cd "$(dirname "$0")/../app/docker"
+docker compose pull crafty || docker-compose pull crafty

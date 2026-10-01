@@ -1,0 +1,8 @@
+appname: crafty-controller
+name: Crafty Controller
+version: 4.0.0-fnos.1
+author: RMDC-Crafty / Fygo package
+description: Gestionnaire web de serveurs Minecraft basé sur Crafty Controller.
+arch: x86_64
+desktop_uidir: ui
+app_type: docker

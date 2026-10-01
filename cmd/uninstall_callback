@@ -1,0 +1,3 @@
+#!/bin/sh
+set -eu
+rm -rf /var/lib/fnos/apps/crafty-controller
